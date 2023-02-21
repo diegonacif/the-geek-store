@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus-visible, a:focus-within, a:focus, a:active, a:target {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #1b1b1b;
+  color: #dadada;
+  padding: 0 2rem;
+}/*# sourceMappingURL=App.css.map */
