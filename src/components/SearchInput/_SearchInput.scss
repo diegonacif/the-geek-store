@@ -1,0 +1,28 @@
+.search-input-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  input {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0 0.5rem;
+    border-radius: 4px;
+    border: 0;
+  }
+
+  .search-icon-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    right: 0.25rem;
+    transform: translateY(-50%);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    background-color: $blue;
+    border-radius: 4px;
+  }
+}

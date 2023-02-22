@@ -1,8 +1,14 @@
+import { List, ShoppingCart, User } from "phosphor-react"
+
 export const Header = () => {
   return (
     <div className="header-container">
-      <h2>The Geek Store</h2>
-      <span>Carrinho de compras</span>
+      <List size={28} color="#f0f0f0" weight="duotone" />
+      <span>The Geek Store</span>
+      <div className="header-utilities">
+        <User size={28} color="#f0f0f0" weight="duotone" />
+        <ShoppingCart size={28} color="#f0f0f0" weight="duotone" />
+      </div>
     </div>
   )
 }

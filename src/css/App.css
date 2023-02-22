@@ -19,8 +19,52 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
+  height: 3.5rem;
   background-color: #1b1b1b;
   color: #dadada;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+.header-container .header-utilities {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.search-input-container input {
+  height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  border: 0;
+}
+.search-input-container .search-icon-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  right: 0.25rem;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  background-color: #1cbdc8;
+  border-radius: 4px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+.app-container .search-input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1cbdc8;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
