@@ -1,5 +1,6 @@
 import { Banners } from './components/Banners/Banners';
 import { Header } from './components/Header/Header';
+import { NewsCards } from './components/NewsCards/NewsCards';
 import { SearchInput } from './components/SearchInput/SearchInput';
 import './css/App.css';
 
@@ -14,6 +15,7 @@ function App() {
         </div>
       }
       <Banners />
+      <NewsCards />
     </div>
   )
 }
