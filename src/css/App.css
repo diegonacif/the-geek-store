@@ -173,6 +173,50 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-position: center center;
 }
 
+.products-section-container {
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.products-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 12rem;
+  padding: 0 1rem;
+}
+.products-card-container img {
+  width: 100%;
+}
+.products-card-container h4 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.925rem;
+}
+.products-card-container #original-price {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1.5rem;
+  text-decoration: line-through;
+  color: #575757;
+}
+.products-card-container #reduced-price {
+  font-weight: 600;
+  color: #1cbdc8;
+}
+.products-card-container #credit-benefits {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+.products-card-container :last-child {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;

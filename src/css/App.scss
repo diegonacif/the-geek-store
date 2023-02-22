@@ -1,6 +1,7 @@
 // Color Palette
 $white: #f1f1f1;
 $gray-100: #dadada;
+$gray-600: #575757;
 $blue: #1cbdc8;
 $black: #1b1b1b;
 
@@ -28,4 +29,6 @@ a {
 @import "../components/SearchInput/SearchInput";
 @import "../components/Banners/Banners";
 @import "../components/NewsCards/NewsCards";
+@import "../components/ProductsSection/ProductsSection";
+@import "../components/ProductsCard/ProductsCard";
 @import "./Home";

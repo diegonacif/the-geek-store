@@ -1,4 +1,5 @@
 import { List, ShoppingCart, User } from "phosphor-react"
+import '../../css/App.css';
 
 export const Header = () => {
   return (

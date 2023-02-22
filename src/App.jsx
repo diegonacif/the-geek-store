@@ -1,6 +1,7 @@
 import { Banners } from './components/Banners/Banners';
 import { Header } from './components/Header/Header';
 import { NewsCards } from './components/NewsCards/NewsCards';
+import { ProductsSection } from './components/ProductsSection/ProductsSection';
 import { SearchInput } from './components/SearchInput/SearchInput';
 import './css/App.css';
 
@@ -16,6 +17,7 @@ function App() {
       }
       <Banners />
       <NewsCards />
+      <ProductsSection />
     </div>
   )
 }

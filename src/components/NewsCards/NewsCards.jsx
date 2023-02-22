@@ -1,3 +1,5 @@
+import '../../css/App.css';
+
 export const NewsCards = () => {
   return (
     <div className="news-cards-container">

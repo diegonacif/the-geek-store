@@ -1,0 +1,40 @@
+.products-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 12rem;
+  padding: 0 1rem;
+
+  img {
+    width: 100%;
+  }
+
+  h4 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.925rem;
+  }
+
+  #original-price {
+    width: fit-content;
+    margin-top: 1.5rem;
+    text-decoration: line-through;
+    color: $gray-600;
+  }
+
+  #reduced-price {
+    font-weight: 600;
+    color: $blue;
+  }
+
+  #credit-benefits {
+    width: fit-content;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  :last-child {
+    width: fit-content;
+    font-size: 0.75rem;
+  }
+}
