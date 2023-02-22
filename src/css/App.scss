@@ -4,6 +4,8 @@ $gray-100: #dadada;
 $blue: #1cbdc8;
 $black: #1b1b1b;
 
+$assets-path: '../assets';
+
 * {
   padding: 0;
   margin: 0;
@@ -24,4 +26,5 @@ a {
 
 @import "../components/Header/Header";
 @import "../components/SearchInput/SearchInput";
+@import "../components/Banners/Banners";
 @import "./Home";

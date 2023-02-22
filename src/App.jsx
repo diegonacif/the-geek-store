@@ -1,3 +1,4 @@
+import { Banners } from './components/Banners/Banners';
 import { Header } from './components/Header/Header';
 import { SearchInput } from './components/SearchInput/SearchInput';
 import './css/App.css';
@@ -12,6 +13,7 @@ function App() {
           <SearchInput />
         </div>
       }
+      <Banners />
     </div>
   )
 }
