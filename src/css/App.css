@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -174,9 +175,11 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 
 .products-section-container {
-  display: flex;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.75rem;
   margin-top: 1rem;
+  gap: 0.75rem;
 }
 
 .products-card-container {
@@ -184,42 +187,77 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   align-items: center;
   flex-direction: column;
   max-width: 12rem;
-  padding: 0 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.products-card-container img {
+.products-card-container .products-card-image-wrapper {
+  position: relative;
   width: 100%;
+  height: 180px;
 }
-.products-card-container h4 {
+.products-card-container .products-card-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.products-card-container .products-card-image-wrapper aside {
+  position: absolute;
+  bottom: -0.55rem;
+  left: 0.65rem;
+  background-color: orangered;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 0.625rem;
+  color: #f1f1f1;
+  padding: 0.125rem 0.5rem;
+}
+.products-card-container .products-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+}
+.products-card-container .products-card-info h4 {
   margin-top: 1rem;
-  text-align: center;
   font-size: 0.925rem;
+  font-weight: 500;
+  color: #575757;
 }
-.products-card-container #original-price {
+.products-card-container .products-card-info #original-price {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 1.5rem;
+  font-size: 0.75rem;
   text-decoration: line-through;
-  color: #575757;
+  color: #757575;
 }
-.products-card-container #reduced-price {
+.products-card-container .products-card-info #reduced-price {
   font-weight: 600;
   color: #1cbdc8;
+  font-size: 1.125rem;
 }
-.products-card-container #credit-benefits {
+.products-card-container .products-card-info #credit-benefits {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 0.5rem;
   font-size: 0.75rem;
+  color: #575757;
 }
-.products-card-container :last-child {
+.products-card-container .products-card-info :last-child {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.75rem;
+  color: #575757;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
+  background-color: #E9EAE9;
 }
 .app-container .search-input-wrapper {
   display: flex;

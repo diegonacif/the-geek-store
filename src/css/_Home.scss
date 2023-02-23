@@ -1,6 +1,7 @@
 .app-container {
   display: flex;
   flex-direction: column;
+  background-color: $gray-200;
 
   .search-input-wrapper {
     display: flex;

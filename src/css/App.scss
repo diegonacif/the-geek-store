@@ -1,6 +1,10 @@
+$font-primary: "Roboto", sans-serif;
+
 // Color Palette
 $white: #f1f1f1;
 $gray-100: #dadada;
+$gray-200: #E9EAE9;
+$gray-500: #757575;
 $gray-600: #575757;
 $blue: #1cbdc8;
 $black: #1b1b1b;
@@ -12,6 +16,7 @@ $assets-path: '../assets';
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; // remove color highlight on tap
+  font-family: $font-primary;
 }
 
 a {

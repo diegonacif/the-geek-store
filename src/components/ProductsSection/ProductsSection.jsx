@@ -6,6 +6,10 @@ export const ProductsSection = () => {
   return (
     <div className="products-section-container">
       <ProductsCard />
+      <ProductsCard />
+      <ProductsCard />
+      <ProductsCard />
+      <ProductsCard />
     </div>
   )
 }

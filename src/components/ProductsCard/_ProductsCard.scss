@@ -3,38 +3,72 @@
   align-items: center;
   flex-direction: column;
   max-width: 12rem;
-  padding: 0 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
 
-  img {
+  .products-card-image-wrapper {
+    position: relative;
     width: 100%;
+    height: 180px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    aside {
+      position: absolute;
+      bottom: -0.55rem;
+      left: 0.65rem;
+      background-color: orangered;
+      width: fit-content;
+      border-radius: 8px;
+      font-size: 0.625rem;
+      color: $white;
+      padding: 0.125rem 0.5rem;;
+    }
   }
 
-  h4 {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0.925rem;
+
+  .products-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem;
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 0.925rem;
+      font-weight: 500;
+      color: $gray-600;
+    }
+  
+    #original-price {
+      width: fit-content;
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      text-decoration: line-through;
+      color: $gray-500;
+    }
+  
+    #reduced-price {
+      font-weight: 600;
+      color: $blue;
+      font-size: 1.125rem;
+    }
+  
+    #credit-benefits {
+      width: fit-content;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: $gray-600;
+    }
+  
+    :last-child {
+      width: fit-content;
+      font-size: 0.75rem;
+      color: $gray-600;
+    }
   }
 
-  #original-price {
-    width: fit-content;
-    margin-top: 1.5rem;
-    text-decoration: line-through;
-    color: $gray-600;
-  }
-
-  #reduced-price {
-    font-weight: 600;
-    color: $blue;
-  }
-
-  #credit-benefits {
-    width: fit-content;
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-  }
-
-  :last-child {
-    width: fit-content;
-    font-size: 0.75rem;
-  }
 }
