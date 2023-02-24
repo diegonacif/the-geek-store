@@ -5,7 +5,7 @@ import { ProductsSection } from './components/ProductsSection/ProductsSection';
 import { SearchInput } from './components/SearchInput/SearchInput';
 import './css/App.css';
 
-function App() {
+export const App = () => {
 
   return (
     <div className="app-container">
@@ -21,5 +21,3 @@ function App() {
     </div>
   )
 }
-
-export default App
