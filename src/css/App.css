@@ -304,7 +304,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .cart-container section {
   height: 100%;
   min-height: calc(100vh - 6.5rem);
-  padding: 0 0.75rem;
+  padding: 0 0.75rem 1rem;
 }
 .cart-container footer {
   position: -webkit-sticky;

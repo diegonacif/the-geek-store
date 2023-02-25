@@ -20,6 +20,12 @@ export const Cart = () => {
         <Cartitem />
         <Cartitem />
         <Cartitem />
+        <Cartitem />
+        <Cartitem />
+        <Cartitem />
+        <Cartitem />
+        <Cartitem />
+        <Cartitem />
       </section>
       <footer>
         <div className="card-sum">
