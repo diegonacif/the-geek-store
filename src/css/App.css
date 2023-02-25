@@ -304,11 +304,10 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .cart-container section {
   height: 100%;
   min-height: calc(100vh - 6.5rem);
-  padding: 0 0.75rem 1rem;
+  padding: 0 0.75rem 4rem;
 }
 .cart-container footer {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: flex-end;
@@ -325,8 +324,14 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   gap: 0.5rem;
   margin-right: 2rem;
 }
+.cart-container footer .card-sum :first-child {
+  font-weight: 600;
+}
 .cart-container footer button {
-  padding: 0 0.75rem;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
 }
 
 .cart-item-container {

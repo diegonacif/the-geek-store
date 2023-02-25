@@ -32,7 +32,7 @@ export const Cart = () => {
           <span>Sub-total</span>
           <span>R$ 0,00</span>
         </div>
-        <button>Continuar (0)</button>
+        <button>Continuar</button>
       </footer>
     </div>
   )
