@@ -9,7 +9,9 @@ export const Header = () => {
       <List size={28} color="#f0f0f0" weight="duotone" />
       <span>The Geek Store</span>
       <div className="header-utilities">
-        <User size={28} color="#f0f0f0" weight="duotone" />
+        <Link to="/login">
+          <User size={28} color="#f0f0f0" weight="duotone" />
+        </Link>
         <Link to="/cart">
           <ShoppingCart size={28} color="#f0f0f0" weight="duotone" />
         </Link>
