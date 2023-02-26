@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { 
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut
   } from 'firebase/auth'
@@ -21,9 +22,12 @@ export const AuthEmailProvider = ({ children }) => {
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+  const [loginReset, setLoginReset] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSignedIn, setIsSignedIn] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  
+  console.log(registerEmail, registerPassword)
 
   const [userState, loading, error] = useAuthState(auth);
 
@@ -71,8 +75,20 @@ export const AuthEmailProvider = ({ children }) => {
       await signOut(auth);
       console.log(user);
     } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
     }
+  }
+
+  const passwordReset = async () => {
+    sendPasswordResetEmail(auth, loginReset)
+      .then(() => {
+        console.log("password reset sent");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error({ "errorCode": errorCode, "errorMessage": errorMessage })
+      });
   }
 
   return (
@@ -83,9 +99,11 @@ export const AuthEmailProvider = ({ children }) => {
       setRegisterPassword,
       setLoginEmail,
       setLoginPassword,
+      setLoginReset,
       registerUser,
       loginUser,
       logoutUser,
+      passwordReset,
       isSignedIn,
       errorMsg,
       isLoading

@@ -491,6 +491,12 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   height: 30rem;
   border-radius: 16px;
 }
+.login-container .login-wrapper #close-button {
+  position: absolute;
+  top: 2rem;
+  right: 0.75rem;
+  cursor: pointer;
+}
 .login-container .login-wrapper h3 {
   color: #f1f1f1;
 }
@@ -535,6 +541,17 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   transform: translateY(-50%);
   cursor: pointer;
 }
+.login-container .login-wrapper #forgot-password, .login-container .login-wrapper #register {
+  color: white;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+.login-container .login-wrapper #forgot-password {
+  margin-top: 1.25rem;
+}
+.login-container .login-wrapper #register {
+  margin-top: 0.75rem;
+}
 .login-container .login-wrapper button {
   margin-top: 2rem;
   border: 2px solid #1cbdc8;
@@ -543,6 +560,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   border-radius: 12px;
   padding: 0.25rem 1.25rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .app-container {

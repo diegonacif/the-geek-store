@@ -9,16 +9,19 @@ import { App } from './App'
 import { Cart } from './components/Cart/Cart';
 import { Login } from './pages/Login/Login';
 import { ProductDetails } from './components/ProductDetails/ProductDetails';
+import { AuthEmailProvider } from './contexts/AuthEmailProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/product-details" element={<ProductDetails />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthEmailProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/product-details" element={<ProductDetails />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthEmailProvider>
   </React.StrictMode>
 )
