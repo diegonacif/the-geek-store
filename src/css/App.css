@@ -331,9 +331,8 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   font-weight: 600;
 }
 .cart-container footer button {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   border: 0;
-  border-radius: 8px 0 0 8px;
   cursor: pointer;
 }
 
