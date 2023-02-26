@@ -86,21 +86,24 @@ export const Login = () => {
 
   return (
     <div className="login-container">
+      <header>
+        <span>The Geek Store</span>
+      </header>
       <section className="login-wrapper">
         {
           loginMode === "login" ?
           // Login Mode
           <>
             <XCircle 
-              size={40} 
-              color="#ffffff" 
+              size={36} 
+              color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => navigate("/")} 
             />
             <h3>Faça login para continuar</h3>
             <div className="input-wrapper">
               <div className="input-row">
-                <UserCircle size={28} color="#154854" weight="duotone" className="login-icons" />
+                <UserCircle size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type="text" 
                   placeholder="E-mail" 
@@ -108,7 +111,7 @@ export const Login = () => {
                 />
               </div>
               <div className="input-row">
-                <LockKeyOpen size={28} color="#154854" weight="duotone" className="login-icons" />
+                <LockKeyOpen size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type={isPasswordShown ? "text" : "password"} 
                   placeholder="Senha" 
@@ -118,14 +121,14 @@ export const Login = () => {
                   isPasswordShown ?
                   <Eye 
                     size={24} 
-                    color="#154854" 
+                    color="#1b1b1b" 
                     weight="duotone" 
                     className="password-eye-icon" 
                     onClick={() => setIsPasswordShown(false)}
                   /> :
                   <EyeSlash 
                     size={24} 
-                    color="#154854" 
+                    color="#1b1b1b" 
                     weight="duotone" 
                     className="password-eye-icon" 
                     onClick={() => setIsPasswordShown(true)}
@@ -141,15 +144,15 @@ export const Login = () => {
           // Forgot Password Mode
           <>
             <XCircle 
-              size={40} 
-              color="#ffffff" 
+              size={36} 
+              color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => handleResetState("login")} 
             />
             <h3>Insira seu e-mail e clique em Enviar</h3>
             <div className="input-wrapper">
               <div className="input-row">
-                <UserCircle size={28} color="#154854" weight="duotone" className="login-icons" />
+                <UserCircle size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type="text" 
                   placeholder="E-mail" 
@@ -164,15 +167,15 @@ export const Login = () => {
           // Register Mode
           <>
             <XCircle 
-              size={40} 
-              color="#ffffff" 
+              size={36} 
+              color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => handleResetState("login")} 
             />
             <h3>Faça seu registro</h3>
             <div className="input-wrapper">
               <div className="input-row">
-                <UserCircle size={28} color="#154854" weight="duotone" className="login-icons" />
+                <UserCircle size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type="text" 
                   placeholder="E-mail" 
@@ -180,7 +183,7 @@ export const Login = () => {
                 />
               </div>
               <div className="input-row">
-                <LockKeyOpen size={28} color="#154854" weight="duotone" className="login-icons" />
+                <LockKeyOpen size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type={isPasswordShown ? "text" : "password"} 
                   placeholder="Senha" 
@@ -190,14 +193,14 @@ export const Login = () => {
                   isPasswordShown ?
                   <Eye 
                     size={24} 
-                    color="#154854" 
+                    color="#1b1b1b" 
                     weight="duotone" 
                     className="password-eye-icon" 
                     onClick={() => setIsPasswordShown(false)}
                   /> :
                   <EyeSlash 
                     size={24} 
-                    color="#154854" 
+                    color="#1b1b1b" 
                     weight="duotone" 
                     className="password-eye-icon" 
                     onClick={() => setIsPasswordShown(true)}
@@ -205,7 +208,7 @@ export const Login = () => {
                 }
               </div>
               <div className="input-row">
-                <LockKeyOpen size={28} color="#154854" weight="duotone" className="login-icons" />
+                <LockKeyOpen size={28} color="#1b1b1b" weight="duotone" className="login-icons" />
                 <input 
                   type={isPasswordShown ? "text" : "password"} 
                   placeholder="Confirme a senha" 
