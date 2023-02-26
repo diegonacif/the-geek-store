@@ -50,6 +50,9 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   align-items: center;
   gap: 1.5rem;
 }
+.header-container .header-utilities svg {
+  cursor: pointer;
+}
 
 .search-input-container {
   position: relative;
