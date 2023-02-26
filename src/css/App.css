@@ -566,6 +566,11 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   cursor: pointer;
 }
 
+.products-management-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
