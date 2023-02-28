@@ -17,7 +17,9 @@ export const App = () => {
       }
       <Banners />
       <NewsCards />
-      <ProductsSection />
+      <ProductsSection category="Camisetas" />
+      <ProductsSection category="Canecas" />
+      <ProductsSection category="Action Figures" />
     </div>
   )
 }
