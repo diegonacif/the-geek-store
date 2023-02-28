@@ -1,4 +1,5 @@
 import { Banners } from './components/Banners/Banners';
+import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { NewsCards } from './components/NewsCards/NewsCards';
 import { ProductsSection } from './components/ProductsSection/ProductsSection';
@@ -20,6 +21,7 @@ export const App = () => {
       <ProductsSection category="Camisetas" />
       <ProductsSection category="Canecas" />
       <ProductsSection category="Action Figures" />
+      <Footer />
     </div>
   )
 }
