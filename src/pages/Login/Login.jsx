@@ -89,7 +89,9 @@ export const Login = () => {
   return (
     <div className="login-container">
       <header>
-        <span>The Geek Store</span>
+        <Link to="/">
+          <span>The Geek Store</span>
+        </Link>
       </header>
       <section className="login-wrapper">
         <video id="background-video" loop autoPlay muted>
