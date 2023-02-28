@@ -5,6 +5,8 @@
   margin-top: 1rem;
   gap: 1rem;
 
+  @include responsive-padding;
+
   .new-card-wrapper {
     position: relative;
     display: flex;
@@ -68,5 +70,10 @@
     background: url(#{$assets-path}/cdz-bg.jpg);
     background-size: cover;
     background-position: center center;
+  }
+
+  @media only screen and ($tablet-size) {
+
+    
   }
 }

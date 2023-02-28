@@ -31,8 +31,10 @@ a {
   display: flex;
   text-decoration: none;
   color: inherit;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -147,6 +149,22 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   padding: 0 1rem;
   margin-top: 1rem;
   gap: 1rem;
+  padding: 0 0.75rem 0;
+}
+@media only screen and (min-width: 510px) {
+  .news-cards-container {
+    padding: 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news-cards-container {
+    padding: 0 6rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .news-cards-container {
+    padding: 0 calc(8rem + 5vw) 0;
+  }
 }
 .news-cards-container .new-card-wrapper {
   position: relative;
@@ -206,7 +224,6 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-size: cover;
   background-position: center center;
 }
-
 .products-section-container {
   display: flex;
   flex-direction: column;
@@ -262,6 +279,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   bottom: -0.55rem;
   left: 0.65rem;
   background-color: orangered;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 8px;
@@ -281,6 +299,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   color: #575757;
 }
 .products-card-container .products-card-info #original-price {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 1.5rem;
@@ -294,6 +313,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   font-size: 1.125rem;
 }
 .products-card-container .products-card-info #credit-benefits {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 0.5rem;
@@ -301,6 +321,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   color: #575757;
 }
 .products-card-container .products-card-info :last-child {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.75rem;
@@ -316,6 +337,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-color: #dadada;
 }
 .cart-container header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
@@ -355,6 +377,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .cart-container footer .card-sum {
   display: flex;
   align-items: center;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   gap: 0.5rem;
@@ -468,6 +491,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .product-details-container section .product-details-quantity-wrapper .quantity-row {
   display: grid;
+  grid-template-columns: -webkit-min-content auto -webkit-min-content;
   grid-template-columns: min-content auto min-content;
   width: 100%;
   gap: 0.75rem;
@@ -573,6 +597,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .footer-container section {
   display: flex;
   flex-direction: column;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -721,6 +746,9 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   border: 0;
 }
 .login-container .login-wrapper .input-wrapper .input-row input::-moz-placeholder {
+  font-weight: 500;
+}
+.login-container .login-wrapper .input-wrapper .input-row input:-ms-input-placeholder {
   font-weight: 500;
 }
 .login-container .login-wrapper .input-wrapper .input-row input::placeholder {
