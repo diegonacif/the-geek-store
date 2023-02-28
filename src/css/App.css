@@ -329,7 +329,12 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   align-items: center;
   margin-left: 1rem;
 }
+.cart-container header .cart-header-wrapper h3 {
+  font-family: "SF-Wonder-Comic", sans-serif;
+  font-size: 1.25rem;
+}
 .cart-container header .cart-header-wrapper span {
+  font-family: "SF-Wonder-Comic", sans-serif;
   margin-left: 0.25rem;
 }
 .cart-container section {
