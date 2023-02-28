@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { AuthEmailContext } from "../../contexts/AuthEmailProvider";
 import { Eye, EyeSlash, LockKeyOpen, UserCircle, XCircle } from "phosphor-react"
 import { Link, useNavigate } from "react-router-dom";
+import bgVideo from "../../assets/White-Piping-Background.webm";
+
 
 export const Login = () => {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
@@ -90,6 +92,11 @@ export const Login = () => {
         <span>The Geek Store</span>
       </header>
       <section className="login-wrapper">
+        <video id="background-video" loop autoPlay muted>
+          <source src={bgVideo} type="video/mp4" />
+          <source src={bgVideo} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
         {
           loginMode === "login" ?
           // Login Mode

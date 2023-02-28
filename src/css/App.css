@@ -665,6 +665,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 100%;
   height: 100vh;
   background: #dadada;
+  overflow: hidden;
 }
 .login-container header {
   position: absolute;
@@ -703,6 +704,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .login-container .login-wrapper h3 {
   color: #1b1b1b;
   font-family: "SF-Wonder-Comic-Italic", sans-serif;
+  z-index: 10;
 }
 .login-container .login-wrapper .input-wrapper {
   display: flex;
@@ -710,6 +712,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 100%;
   margin-top: 3rem;
   gap: 0.75rem;
+  z-index: 10;
 }
 .login-container .login-wrapper .input-wrapper .input-row {
   position: relative;
@@ -749,6 +752,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   color: black;
   font-size: 0.8125rem;
   cursor: pointer;
+  z-index: 10;
 }
 .login-container .login-wrapper #forgot-password {
   margin-top: 1.25rem;
@@ -766,6 +770,14 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   padding: 0.25rem 2.25rem;
   font-weight: 600;
   cursor: pointer;
+  z-index: 10;
+}
+.login-container #background-video {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  z-index: 1;
+  height: calc(100vh - 3.5rem);
 }
 
 .products-management-container {
