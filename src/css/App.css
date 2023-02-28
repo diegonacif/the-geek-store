@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Flexo-Regular";
-  src: url("../assets/fonts/Flexo-Regular.ttf");
+  font-family: "SF-Wonder-Comic";
+  src: url("../assets/fonts/sf-wonder-comic/SF-Wonder-Comic-Bold-Italic.ttf");
 }
 * {
   padding: 0;
@@ -56,6 +56,10 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .header-container .header-utilities svg {
   cursor: pointer;
+}
+.header-container span {
+  font-family: "SF-Wonder-Comic", sans-serif;
+  font-size: 1.25rem;
 }
 
 .search-input-container {

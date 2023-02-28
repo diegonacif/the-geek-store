@@ -13,11 +13,11 @@ $assets-path: '../assets';
 
 // Fonts
 @font-face {
-  font-family: "Flexo-Regular";
-  src: url("../assets/fonts/Flexo-Regular.ttf");
+  font-family: "SF-Wonder-Comic";
+  src: url("../assets/fonts/sf-wonder-comic/SF-Wonder-Comic-Bold-Italic.ttf");
 }
 
-$secondary-font: "Flexo-Demi", sans-serif;
+$font-secondary: "SF-Wonder-Comic", sans-serif;
 
 * {
   padding: 0;
