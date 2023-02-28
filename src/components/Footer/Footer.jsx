@@ -44,19 +44,19 @@ export const Footer = () => {
         <div className="section-content">
           <div className="section-row">
             <div className="card-wrapper">
-              <img src={americanLogo} alt="" id="americanLogo" />
+              <img src={americanLogo} alt="american express card logo" id="americanLogo" />
             </div>
             <div className="card-wrapper">
-              <img src={dinnersLogo} alt="" id="dinnersLogo" />
+              <img src={dinnersLogo} alt="dinners club card logo" id="dinnersLogo" />
             </div>
             <div className="card-wrapper">
-              <img src={eloLogo} alt="" id="eloLogo" />
+              <img src={eloLogo} alt="elo card logo" id="eloLogo" />
             </div>
             <div className="card-wrapper">
-              <img src={mastercardLogo} alt="" id="mastercardLogo" />
+              <img src={mastercardLogo} alt="mastercard card logo" id="mastercardLogo" />
             </div>
             <div className="card-wrapper">
-              <img src={visaLogo} alt="" id="visaLogo" />
+              <img src={visaLogo} alt="visa card logo" id="visaLogo" />
             </div>
           </div>
         </div>
