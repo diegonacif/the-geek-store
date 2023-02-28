@@ -246,6 +246,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .products-card-container .products-card-image-wrapper {
   position: relative;
