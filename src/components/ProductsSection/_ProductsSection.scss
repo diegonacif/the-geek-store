@@ -21,9 +21,17 @@
     }
   }
 
+  .swiper-wrapper {
+    width: calc(100vw - 1.5rem);
+  }
+
   #main-banner {
-    width: 100%;
+    width: 100vw;
     height: 300px;
+
+    // .swiper-wrapper {
+    //   justify-content: center;
+    // }
 
     .swiper-button-next, .swiper-button-prev {
       &::after {

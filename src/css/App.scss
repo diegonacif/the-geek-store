@@ -25,6 +25,10 @@ $assets-path: '../assets';
 $font-secondary: "SF-Wonder-Comic-Italic-Bold", sans-serif;
 $font-third: "SF-Wonder-Comic-Italic", sans-serif;
 
+// Media Variables
+$tablet-size: "min-width: 510px";
+$desktop-size: "min-width: 1024px";
+
 * {
   padding: 0;
   margin: 0;

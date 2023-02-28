@@ -11,13 +11,30 @@ export const ProductsSection = ({ category }) => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={14}
-        slidesPerView={2}
+        // slidesPerView={2}
         speed={600}
         navigation={{ clickable: true }}
-        // pagination={{ clickable: true, type: 'bullets' }}
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={(swiper) => console.log(swiper)}
-        id="main-banner"
+        // Responsive breakpoints
+        breakpoints= {{
+          // when window width is >= 1px
+          1: {
+            slidesPerView: 2,
+            // spaceBetween: 20,
+            width: 1
+          },
+          // when window width is >= 510px
+          510: {
+            slidesPerView: 3,
+            // spaceBetween: 30,
+            width: 510
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 4,
+            // spaceBetween: 40,
+            width: 1024
+          }
+        }}
       >
         <SwiperSlide>
           <ProductsCard />
