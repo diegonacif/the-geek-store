@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import { NewsCards } from './components/NewsCards/NewsCards';
 import { ProductsSection } from './components/ProductsSection/ProductsSection';
 import { SearchInput } from './components/SearchInput/SearchInput';
+import { WhatsappButton } from './components/WhatsappButton/WhatsappButton';
 import './css/App.css';
 
 export const App = () => {
@@ -22,6 +23,7 @@ export const App = () => {
       <ProductsSection category="Canecas" />
       <ProductsSection category="Action Figures" />
       <Footer />
+      <WhatsappButton />
     </div>
   )
 }

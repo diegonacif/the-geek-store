@@ -623,6 +623,21 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   margin-left: 0.4rem;
 }
 
+.whatsapp-button-container {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #2BB13E;
+  cursor: pointer;
+  z-index: 99;
+}
+
 .login-container {
   position: relative;
   display: flex;
