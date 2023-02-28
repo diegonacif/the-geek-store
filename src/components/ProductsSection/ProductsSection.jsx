@@ -16,24 +16,19 @@ export const ProductsSection = ({ category }) => {
         navigation={{ clickable: true }}
         // Responsive breakpoints
         breakpoints= {{
-          // when window width is >= 1px
+          // when window width is >= 100px
           100: {
             slidesPerView: 2,
-            // spaceBetween: 20,
-            // width: 100
           },
           // when window width is >= 510px
           510: {
             slidesPerView: 3,
-            // spaceBetween: 30,
-            // width: 510
           },
-          // when window width is >= 1024px
+          // when window width is >= 768px
           768: {
             slidesPerView: 4,
-            // spaceBetween: 40,
-            // width: 1024
           },
+          // when window width is >= 1024px
           1024 : {
             slidesPerView: 5,
           }
