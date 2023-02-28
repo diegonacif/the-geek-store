@@ -17,22 +17,25 @@ export const ProductsSection = ({ category }) => {
         // Responsive breakpoints
         breakpoints= {{
           // when window width is >= 1px
-          1: {
+          100: {
             slidesPerView: 2,
             // spaceBetween: 20,
-            width: 1
+            // width: 100
           },
           // when window width is >= 510px
           510: {
             slidesPerView: 3,
             // spaceBetween: 30,
-            width: 510
+            // width: 510
           },
           // when window width is >= 1024px
-          1024: {
+          768: {
             slidesPerView: 4,
             // spaceBetween: 40,
-            width: 1024
+            // width: 1024
+          },
+          1024 : {
+            slidesPerView: 5,
           }
         }}
       >
