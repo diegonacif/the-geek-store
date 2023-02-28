@@ -215,6 +215,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .products-section-container h2 {
   text-align: center;
   color: #1b1b1b;
+  font-family: "SF-Wonder-Comic", sans-serif;
 }
 .products-section-container h2:after {
   content: "";
@@ -222,7 +223,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   height: 2px;
   width: 4rem;
   background-color: #1cbdc8;
-  margin: 1.5rem auto;
+  margin: 1.25rem auto;
 }
 .products-section-container #main-banner {
   width: 100%;

@@ -9,6 +9,7 @@
   h2 {
     text-align: center;
     color: $black;
+    font-family: $font-secondary;
 
     &:after {
       content: "";
@@ -16,7 +17,7 @@
       height: 2px;
       width: 4rem;
       background-color: $blue;
-      margin: 1.5rem auto;
+      margin: 1.25rem auto;
     }
   }
 
