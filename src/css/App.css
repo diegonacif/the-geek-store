@@ -437,6 +437,9 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   flex-direction: column;
   padding: 0.75rem;
 }
+.product-details-container section h2 {
+  font-family: "SF-Wonder-Comic-Italic", sans-serif;
+}
 .product-details-container section img {
   width: 100%;
   margin-top: 2rem;
@@ -522,6 +525,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   text-align: center;
   color: #1cbdc8;
   margin: 2rem 0 1rem;
+  font-family: "SF-Wonder-Comic-Italic-Bold", sans-serif;
 }
 .product-register input {
   height: 2.25rem;
