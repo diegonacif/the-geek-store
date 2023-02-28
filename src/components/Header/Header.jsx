@@ -1,6 +1,6 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { List, ShoppingCart, SignOut, User } from "phosphor-react"
-import { useContext } from 'react';
 import { AuthEmailContext } from '../../contexts/AuthEmailProvider';
 import '../../css/App.css';
 
@@ -14,7 +14,9 @@ export const Header = () => {
     <div className="header-container">
       
       <List size={28} color="#f0f0f0" weight="duotone" />
-      <span>The Geek Store</span>
+      <Link to="/">
+        <span>The Geek Store</span>
+      </Link>
       <div className="header-utilities">
         <Link to="/cart">
           <ShoppingCart size={28} color="#f0f0f0" weight="duotone" />
