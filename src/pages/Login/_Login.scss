@@ -24,8 +24,8 @@
 
     span {
       color: $blue;
-      font-size: 1.125rem;
-      // font-weight: 600;
+      font-size: 1.25rem;
+      font-family: $font-secondary;
     }
   }
 
@@ -51,6 +51,7 @@
 
     h3 {
       color: $black;
+      font-family: $font-third;
     }
 
     .input-wrapper {

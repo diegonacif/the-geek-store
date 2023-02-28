@@ -13,11 +13,17 @@ $assets-path: '../assets';
 
 // Fonts
 @font-face {
-  font-family: "SF-Wonder-Comic";
+  font-family: "SF-Wonder-Comic-Italic-Bold";
   src: url("../assets/fonts/sf-wonder-comic/SF-Wonder-Comic-Bold-Italic.ttf");
 }
 
-$font-secondary: "SF-Wonder-Comic", sans-serif;
+@font-face {
+  font-family: "SF-Wonder-Comic-Italic";
+  src: url("../assets/fonts/sf-wonder-comic/SF-Wonder-Comic-Italic.ttf");
+}
+
+$font-secondary: "SF-Wonder-Comic-Italic-Bold", sans-serif;
+$font-third: "SF-Wonder-Comic-Italic", sans-serif;
 
 * {
   padding: 0;
