@@ -11,6 +11,14 @@ $black: #1b1b1b;
 
 $assets-path: '../assets';
 
+// Fonts
+@font-face {
+  font-family: "Flexo-Regular";
+  src: url("../assets/fonts/Flexo-Regular.ttf");
+}
+
+$secondary-font: "Flexo-Demi", sans-serif;
+
 * {
   padding: 0;
   margin: 0;

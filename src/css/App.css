@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Flexo-Regular";
+  src: url("../assets/fonts/Flexo-Regular.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -477,11 +481,14 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   display: flex;
   flex-direction: column;
   padding: 0.75rem;
+  background-color: #dadada;
+  min-height: 100vh;
   gap: 0.75rem;
 }
 .product-register h2 {
   text-align: center;
   color: #1cbdc8;
+  margin: 2rem 0 1rem;
 }
 .product-register input {
   height: 2.25rem;
@@ -493,6 +500,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .product-register input[type=file] {
   padding: 0.25rem 0.5rem;
+  background-color: white;
 }
 .product-register textarea {
   height: 4.2rem;
