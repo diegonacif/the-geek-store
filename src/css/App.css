@@ -538,7 +538,23 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .product-details-container section {
   display: flex;
   flex-direction: column;
-  padding: 0.75rem;
+  margin-top: 2rem;
+  padding: 0 0.75rem 0;
+}
+@media only screen and (min-width: 510px) {
+  .product-details-container section {
+    padding: 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product-details-container section {
+    padding: 0 6rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .product-details-container section {
+    padding: 0 calc(8rem + 10vw) 0;
+  }
 }
 .product-details-container section h2 {
   font-family: "SF-Wonder-Comic-Italic", sans-serif;
@@ -610,10 +626,23 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .product-details-container section .produt-details-description-wrapper {
   padding: 1rem 0.75rem;
-  border: 1px solid #dadada;
+  border: 1px solid #1cbdc8;
+  margin-top: 1rem;
 }
 .product-details-container section .produt-details-description-wrapper p {
   margin-top: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .product-details-container section {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .product-details-container section .section-column {
+    width: 50%;
+  }
+  .product-details-container section .produt-details-description-wrapper {
+    margin-top: 0;
+  }
 }
 
 .product-register {
