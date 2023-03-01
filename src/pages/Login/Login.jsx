@@ -85,6 +85,15 @@ export const Login = () => {
     handleResetState("login");
   }
 
+  function handleXButton () {
+    if(loginMode === "login") {
+      return navigate("/");
+    } else if (loginMode === "forgotPassword" || loginMode === "register") {
+      return handleResetState("login");
+    } else {
+      return;
+    }
+  }
 
   return (
     <div className="login-container">
@@ -92,6 +101,12 @@ export const Login = () => {
         <Link to="/">
           <span>The Geek Store</span>
         </Link>
+        <XCircle 
+          size={36} 
+          color="#1cbdc8" 
+          weight="duotone" id="close-button" 
+          onClick={() => handleXButton()} 
+        />
       </header>
       <section className="login-wrapper">
         <video id="background-video" loop autoPlay muted>
@@ -103,12 +118,12 @@ export const Login = () => {
           loginMode === "login" ?
           // Login Mode
           <>
-            <XCircle 
+            {/* <XCircle 
               size={36} 
               color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => navigate("/")} 
-            />
+            /> */}
             <h3>Faça login para continuar</h3>
             <div className="input-wrapper">
               <div className="input-row">
@@ -152,12 +167,12 @@ export const Login = () => {
           loginMode === "forgotPassword" ?
           // Forgot Password Mode
           <>
-            <XCircle 
+            {/* <XCircle 
               size={36} 
               color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => handleResetState("login")} 
-            />
+            /> */}
             <h3>Insira seu e-mail e clique em Enviar</h3>
             <div className="input-wrapper">
               <div className="input-row">
@@ -175,12 +190,12 @@ export const Login = () => {
           loginMode === "register" ?
           // Register Mode
           <>
-            <XCircle 
+            {/* <XCircle 
               size={36} 
               color="#1cbdc8" 
               weight="duotone" id="close-button" 
               onClick={() => handleResetState("login")} 
-            />
+            /> */}
             <h3>Faça seu registro</h3>
             <div className="input-wrapper">
               <div className="input-row">
