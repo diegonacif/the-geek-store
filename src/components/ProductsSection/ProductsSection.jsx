@@ -3,8 +3,10 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import '../../css/App.css';
+import { useNavigate } from 'react-router-dom';
 
 export const ProductsSection = ({ category }) => {
+  const navigate = useNavigate();
   return (
     <div className="products-section-container">
       <h2>{category}</h2>
@@ -37,19 +39,19 @@ export const ProductsSection = ({ category }) => {
           }
         }}
       >
-        <SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/product-details")}>
           <ProductsCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/product-details")}>
           <ProductsCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/product-details")}>
           <ProductsCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/product-details")}>
           <ProductsCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/product-details")}>
           <ProductsCard />
         </SwiperSlide>
       </Swiper>

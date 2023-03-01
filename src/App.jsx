@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { AdminButton } from './components/AdminButton/AdminButton';
 import { Banners } from './components/Banners/Banners';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';

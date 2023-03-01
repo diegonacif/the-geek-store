@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Gear, List, ShoppingCart, SignOut, User } from "phosphor-react"
 import { AuthEmailContext } from '../../contexts/AuthEmailProvider';
 import '../../css/App.css';
-import { AdminButton } from '../AdminButton/AdminButton';
 
 export const Header = () => {
   // Email Context
