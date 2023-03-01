@@ -31,8 +31,20 @@ Para instalação utilize o npm. Após clonar o projeto rode:
 * Implementação do usuário administrador.
 ## Screenshots
 
-![App Screenshot](https://imgbox.com/pv1Rhttv)
-
+![desktop screenshot 1](https://images2.imgbox.com/c5/f1/pv1Rhttv_o.png)
+---
+![desktop screenshot 2](https://images2.imgbox.com/f8/0b/QHEwzrpI_o.png)
+---
+![cart screenshot](https://images2.imgbox.com/9a/a7/ad6dqL8K_o.png)
+---
+![product register screenshot](https://images2.imgbox.com/cf/9a/vW58m0mo_o.png)
+---
+![login screenshot](https://images2.imgbox.com/ba/57/gCjSt1eY_o.png)
+---
+![mobile screenshot](https://images2.imgbox.com/20/75/lr9EMOSc_o.png)
+---
+![mobile screenshot 2](https://images2.imgbox.com/be/54/n9a3wC63_o.png)
+---
 
 ## Stack utilizada
 
