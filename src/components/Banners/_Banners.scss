@@ -1,15 +1,15 @@
 .banners-container {
   // display: flex;
+  // @include responsive-padding;
 
   #main-banner {
     width: 100%;
-    height: 300px;
+    height: calc(19rem + 20vw);
 
     .carousel-item {
       background-color: green;
       width: 100%;
       height: 100%;
-      
     }
 
     #carousel-item-1 {
@@ -54,14 +54,9 @@
       align-items: center;
       justify-content: center;
 
-      
-
       span {
         font-size: 0.875rem;
       }
     }
   }
-
-
-  
 }
