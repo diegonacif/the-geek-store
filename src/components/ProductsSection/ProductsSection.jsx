@@ -26,11 +26,11 @@ export const ProductsSection = ({ category }) => {
           },
           // when window width is >= 768px
           768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
           // when window width is >= 1024px
           1024 : {
-            slidesPerView: 5,
+            slidesPerView: 4,
           }
         }}
       >
