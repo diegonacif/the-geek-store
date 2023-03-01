@@ -1,6 +1,6 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { List, ShoppingCart, SignOut, User } from "phosphor-react"
+import { Gear, List, ShoppingCart, SignOut, User } from "phosphor-react"
 import { AuthEmailContext } from '../../contexts/AuthEmailProvider';
 import '../../css/App.css';
 
@@ -10,6 +10,8 @@ export const Header = () => {
     isSignedIn,
     logoutUser
   } = useContext(AuthEmailContext);
+
+  const [isAdmin, setIsAdmin] = useState(true);
   return (
     <div className="header-container">
       
@@ -18,9 +20,17 @@ export const Header = () => {
         <span>The Geek Store</span>
       </Link>
       <div className="header-utilities">
-        <Link to="/cart">
-          <ShoppingCart size={28} color="#f0f0f0" weight="duotone" />
-        </Link>
+        {
+          isSignedIn === true && isAdmin === false ?
+          <Link to="/cart">
+            <ShoppingCart size={28} color="#f0f0f0" weight="duotone" />
+          </Link> :
+          isSignedIn === true && isAdmin === true ?
+          <Link to="/products-management">
+            <Gear size={28} color="#f0f0f0" weight="duotone" />
+          </Link> :
+          null
+        }
         {
           isSignedIn ?
           <SignOut onClick={() => logoutUser()} size={28} color="#f0f0f0" weight="duotone" /> :
