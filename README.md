@@ -5,13 +5,29 @@ O projeto é um site no formato e-commerce, voltado para a venda de produtos do 
 
 Ele conta com uma página principal, onde são exibidos os produtos cadastrados. Uma tela de login, onde além de logar, é possível se registrar ou utilizar a função recuperar sua senha. Uma tela para o carrinho de compras, o qual é vinculado ao usuário logado. Uma tela de registro de produtos, que só pode ser acessada por um usuário administrador.
 
-## Instalação
+## Rodando localmente
 
-Para instalação utilize o npm. Após clonar o projeto rode:
+Clone o projeto
+
+```bash
+  git clone https://github.com/diegonacif/the-geek-store.git
+```
+
+Entre no diretório do projeto
 
 ```bash
   cd the-geek-store
+```
+
+Instale as dependências
+
+```bash
   npm install
+```
+
+Inicie o servidor
+
+```bash
   npm run dev
 ```
 
