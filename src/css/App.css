@@ -245,7 +245,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 100vw;
   flex-direction: column;
   padding: 0.75rem;
-  margin-top: 1rem;
+  margin: 2rem 0;
   gap: 0.75rem;
   padding: 0 0.75rem 0;
 }
@@ -623,6 +623,22 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-color: #dadada;
   min-height: 100vh;
   gap: 0.75rem;
+  padding: 0 0.75rem 0;
+}
+@media only screen and (min-width: 510px) {
+  .product-register {
+    padding: 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product-register {
+    padding: 0 6rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .product-register {
+    padding: 0 calc(8rem + 10vw) 0;
+  }
 }
 .product-register h2 {
   text-align: center;
