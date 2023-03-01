@@ -52,6 +52,22 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-color: #1b1b1b;
   color: #dadada;
   padding: 0 1rem;
+  padding: 0 0.75rem 0;
+}
+@media only screen and (min-width: 510px) {
+  .header-container {
+    padding: 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 6rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    padding: 0 calc(8rem + 12vw) 0;
+  }
 }
 .header-container .header-utilities {
   display: flex;
@@ -163,7 +179,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 @media only screen and (min-width: 1024px) {
   .news-cards-container {
-    padding: 0 calc(8rem + 5vw) 0;
+    padding: 0 calc(8rem + 12vw) 0;
   }
 }
 .news-cards-container .new-card-wrapper {
@@ -815,4 +831,20 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   padding: 1rem;
   background-color: #1cbdc8;
   cursor: pointer;
+  padding: 1rem 0.75rem 1rem;
+}
+@media only screen and (min-width: 510px) {
+  .app-container .search-input-wrapper {
+    padding: 1rem 4rem 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .app-container .search-input-wrapper {
+    padding: 1rem 6rem 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .app-container .search-input-wrapper {
+    padding: 1rem calc(8rem + 12vw) 1rem;
+  }
 }/*# sourceMappingURL=App.css.map */

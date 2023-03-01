@@ -19,7 +19,7 @@ $assets-path: '../assets';
     padding: $pt 6rem $pb;
   }
   @media only screen and ($desktop-size) {
-    padding: $pt calc(8rem + 5vw) $pb;
+    padding: $pt calc(8rem + 12vw) $pb;
   }
 }
 

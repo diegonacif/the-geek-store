@@ -9,5 +9,7 @@
     padding: 1rem;
     background-color: $blue;
     cursor: pointer;
+
+    @include responsive-padding(1rem, 1rem);
   }
 }
