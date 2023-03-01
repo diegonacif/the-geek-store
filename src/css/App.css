@@ -478,9 +478,10 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .cart-item-container {
   display: flex;
   width: 100%;
+  max-width: 30rem;
   height: 100%;
   background-color: white;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
   border-radius: 4px;
 }
 .cart-item-container img {
