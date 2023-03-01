@@ -77,6 +77,21 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .header-container .header-utilities svg {
   cursor: pointer;
 }
+.header-container .admin-button-container {
+  position: fixed;
+  bottom: 5rem;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1cbdc8;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  z-index: 99;
+}
+.header-container .admin-button-container span {
+  color: #1b1b1b;
+}
 .header-container span {
   font-family: "SF-Wonder-Comic-Italic-Bold", sans-serif;
   font-size: 1.25rem;
@@ -832,6 +847,13 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   border-radius: 50%;
   background-color: #2BB13E;
   cursor: pointer;
+  z-index: 99;
+}
+
+.admin-button-container {
+  position: fixed;
+  bottom: 5rem;
+  left: 0.75rem;
   z-index: 99;
 }
 

@@ -19,6 +19,23 @@
     }
   }
 
+  .admin-button-container {
+    position: fixed;
+    bottom: 5rem;
+    left: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: $blue;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    z-index: 99;
+
+    span {
+      color: $black;
+    }
+  }
+
   span {
     font-family: $font-secondary;
     font-size: 1.25rem;

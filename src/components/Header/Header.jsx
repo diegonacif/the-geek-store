@@ -1,8 +1,9 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Gear, List, ShoppingCart, SignOut, User } from "phosphor-react"
 import { AuthEmailContext } from '../../contexts/AuthEmailProvider';
 import '../../css/App.css';
+import { AdminButton } from '../AdminButton/AdminButton';
 
 export const Header = () => {
   // Email Context
@@ -11,7 +12,12 @@ export const Header = () => {
     logoutUser
   } = useContext(AuthEmailContext);
 
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
+  
+  function handleIsAdmin(value) {
+    return setIsAdmin(current => !current);
+  }
+
   return (
     <div className="header-container">
       
@@ -39,6 +45,13 @@ export const Header = () => {
           </Link>
         }
       </div>
+      {
+        isSignedIn &&
+        <div className="admin-button-container">
+          <span>Admin ? </span>
+          <input type="checkbox" onChange={(e) => {handleIsAdmin(e.target.value)}} />
+        </div>
+      }
     </div>
   )
 }
